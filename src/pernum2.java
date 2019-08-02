@@ -6,22 +6,22 @@ public class pernum2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int n,total,k,r,j;
+		int n,tot,k,r,j;
 		int lm = 0;
 	
 		for(n=1; n<=100; n++) {
-			total = 0;
+			tot = 0;
 			k = n/2;
 			
 			for (j=1; j<=k; j++) {
 				
 				r = n % j;
 				if(r==0) {
-					total += j;
+					tot += j;
 				}
 			}
 			
-			if(n==total) {
+			if(n==tot) {
 			System.out.println(n+"은 완전수이다.");
 			lm += 1;
 			}
